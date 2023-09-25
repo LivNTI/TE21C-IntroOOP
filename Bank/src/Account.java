@@ -1,8 +1,8 @@
 public class Account {
     // Attribute
-    int accNo;
-    String manager= "Emir";
-    double sum;
+    private int accNo;
+    private String manager= "Emir";
+    private double sum;
 
     // Constructors
     public Account(int accNo, double sum){
@@ -11,9 +11,37 @@ public class Account {
 
     }
 
+    //methods
     public void changeSum(double change){
         sum= sum+change;
     }
 
+    // getters & setters
+    public double getSum(){
+        return (this.sum);
+    }
 
+    public void setSum(double sum){
+        if(sum<0){
+            System.out.println("no negative sums");
+        }else {
+            this.sum = sum;
+            System.out.println("sum has been changed");
+        }
+    }
+
+    public String getManager() {
+        return manager;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+

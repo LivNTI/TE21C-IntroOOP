@@ -11,7 +11,7 @@ public class Customer {
         this.id = id;
         this.acc= acc;
 
-        System.out.println("Pelle has " + acc.sum + " blubb");
+        System.out.println("Pelle has " + acc.getSum() + " blubb");
 
     }
 }
